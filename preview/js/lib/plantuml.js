@@ -59,6 +59,6 @@ function loadPlantUML() {
   Array.prototype.slice.call(umls).forEach(function(el) {
     var text = el.textContent
     var url = compress(text);
-    el.parentNode.outerHTML = '<div><img src="' + url + '" /></div>'
+    el.parentNode.outerHTML = '<div class="plantuml"><img src="' + url + '" /></div>'
   });
 }
